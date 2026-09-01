@@ -1,8 +1,8 @@
 <?php
 
-namespace App\WhatsAppIntegration\Infrastructure\Repository;
+namespace App\WhatsappIntegration\Infrastructure\Repository;
 
-use App\WhatsAppIntegration\Domain\Entity\MessageTemplate;
+use App\WhatsappIntegration\Domain\Entity\MessageTemplate;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 

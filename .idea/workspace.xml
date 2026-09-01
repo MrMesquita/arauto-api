@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c31f5a9-2d58-48f0-94be-aa7d6beea1a0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/reference.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/reference.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Campaign/Domain/Entity/Campaign.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Campaign/Domain/Entity/Campaign.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Contact/Domain/Entity/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contact/Domain/Entity/Contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shared/Domain/Entity/Tenant.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Domain/Entity/Tenant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WhatsAppIntegration/Domain/Entity/MessageTemplate.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/WhatsappIntegration/Domain/Entity/MessageTemplate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WhatsAppIntegration/Domain/Entity/WhatsAppAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/WhatsappIntegration/Domain/Entity/WhatsappAccount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WhatsAppIntegration/Domain/Enum/TemplateCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/WhatsappIntegration/Domain/Enum/TemplateCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WhatsAppIntegration/Infrastructure/Repository/MessageTemplateRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/WhatsappIntegration/Infrastructure/Repository/MessageTemplateRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WhatsAppIntegration/Infrastructure/Repository/WhatsAppAccountRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/WhatsappIntegration/Infrastructure/Repository/WhatsappAccountRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,61 +46,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
+      <entry key="MS100" value="4.857218770014697E-26" />
+      <entry key="MS500" value="8.65520847271694E-6" />
+      <entry key="S2" value="0.05423996283586166" />
+      <entry key="S5" value="0.31172862575619775" />
+      <entry key="S10" value="0.5644758164548347" />
+      <entry key="S30" value="1.1656650528118027" />
+      <entry key="S60" value="2.266035205662367" />
+      <entry key="M2" value="3.9375192278964293" />
+      <entry key="M5" value="5.932082899237224" />
+      <entry key="M10" value="7.701244643700314" />
+      <entry key="M15" value="11.910095512788354" />
+      <entry key="M30" value="43.674630875007566" />
+      <entry key="H1" value="154.59917733505068" />
+      <entry key="H2" value="377.6832035243417" />
+      <entry key="H4" value="644.2514995946274" />
+      <entry key="D1" value="1057.2355106006025" />
+      <entry key="W1" value="1156.4255397660438" />
+    </decayedCancelled>
+    <decayedSelected>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
       <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000000018717194" />
-      <entry key="S10" value="1.0001645106927" />
-      <entry key="S30" value="1.3415818485586748" />
-      <entry key="S60" value="3.3860268752907565" />
-      <entry key="M2" value="8.505958000807482" />
-      <entry key="M5" value="24.822236576011985" />
-      <entry key="M10" value="45.28223524326397" />
-      <entry key="M15" value="62.38643099626391" />
-      <entry key="M30" value="126.5455159236916" />
-      <entry key="H1" value="275.5892439170784" />
-      <entry key="H2" value="496.35740523479217" />
-      <entry key="H4" value="713.0935190862074" />
-      <entry key="D1" value="1003.9380041913954" />
-      <entry key="W1" value="1068.6885078978385" />
-    </decayedCancelled>
-    <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="7.023285379120887E-117" />
-      <entry key="S5" value="5.231944148835118E-47" />
-      <entry key="S10" value="1.167226895618575E-23" />
-      <entry key="S30" value="6.465311912858313E-8" />
-      <entry key="S60" value="7.907490261819221E-4" />
-      <entry key="M2" value="0.11209577023099625" />
-      <entry key="M5" value="2.536363331356614" />
-      <entry key="M10" value="7.407447280357227" />
-      <entry key="M15" value="10.664936271931483" />
-      <entry key="M30" value="15.768028398787129" />
-      <entry key="H1" value="20.247050815087267" />
-      <entry key="H2" value="24.23252557463384" />
-      <entry key="H4" value="27.362945666470953" />
-      <entry key="D1" value="31.081682516953645" />
-      <entry key="W1" value="31.864531914963944" />
+      <entry key="S5" value="1.0000000000933216" />
+      <entry key="S10" value="1.000009660303862" />
+      <entry key="S30" value="1.0212975802037207" />
+      <entry key="S60" value="1.1459369048723498" />
+      <entry key="M2" value="1.3820169344762756" />
+      <entry key="M5" value="1.6819623129818055" />
+      <entry key="M10" value="1.9122282800894448" />
+      <entry key="M15" value="2.3584877338754353" />
+      <entry key="M30" value="5.229048945364907" />
+      <entry key="H1" value="11.573599654790948" />
+      <entry key="H2" value="19.429998759135735" />
+      <entry key="H4" value="26.272443361892538" />
+      <entry key="D1" value="34.82953424467819" />
+      <entry key="W1" value="36.67849127456559" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8705505632961241" />
-      <entry key="MS500" value="0.9726549474122855" />
-      <entry key="S2" value="0.9930924954370359" />
-      <entry key="S5" value="0.997231253216527" />
-      <entry key="S10" value="0.9987788639167862" />
-      <entry key="S30" value="1.3409105827874899" />
-      <entry key="S60" value="3.3858538457709044" />
-      <entry key="M2" value="8.61533258739889" />
-      <entry key="M5" value="27.34206979762097" />
-      <entry key="M10" value="52.66552115462874" />
-      <entry key="M15" value="73.02798899679351" />
-      <entry key="M30" value="142.2958467760208" />
-      <entry key="H1" value="295.8244629592366" />
-      <entry key="H2" value="520.5825501967134" />
-      <entry key="H4" value="740.4521750833452" />
-      <entry key="D1" value="1035.0188510582764" />
-      <entry key="W1" value="1100.5529167824297" />
+      <entry key="MS100" value="0.0010612645141856033" />
+      <entry key="MS500" value="0.25419617811631834" />
+      <entry key="S2" value="0.749856100382639" />
+      <entry key="S5" value="1.1474343757660095" />
+      <entry key="S10" value="1.4647299050447875" />
+      <entry key="S30" value="2.145840456384926" />
+      <entry key="S60" value="3.38657073089386" />
+      <entry key="M2" value="5.303062310085356" />
+      <entry key="M5" value="7.605621670835561" />
+      <entry key="M10" value="9.608511364514953" />
+      <entry key="M15" value="14.26424011814617" />
+      <entry key="M30" value="48.89815275866669" />
+      <entry key="H1" value="166.1661665721169" />
+      <entry key="H2" value="397.107374390271" />
+      <entry key="H4" value="670.5198791954718" />
+      <entry key="D1" value="1092.0641198494195" />
+      <entry key="W1" value="1193.1038911231622" />
     </decayedShown>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.4">
@@ -159,6 +170,12 @@
       <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
       <path value="$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/api-platform/core" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -173,32 +190,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/marcelo-mesquita/projects/pessoais/arauto/src/Shared",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "php.override.implement.member.chooser.php.doc": "NONE",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/marcelo-mesquita/projects/pessoais/arauto/src/Shared&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Shared" />
@@ -210,7 +227,6 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-PS-262.9437.196" />
         <option value="bundled-php-predefined-a98d8de5180a-9522f28f0b20-com.jetbrains.php.sharedIndexes-PS-262.9437.196" />
       </set>
     </attachedChunks>
@@ -229,7 +245,9 @@
       <workItem from="1788267074939" duration="146000" />
       <workItem from="1788267237449" duration="2938000" />
       <workItem from="1788273720901" duration="28000" />
-      <workItem from="1788273783889" duration="14252000" />
+      <workItem from="1788273783889" duration="16138000" />
+      <workItem from="1788291742130" duration="44000" />
+      <workItem from="1788291911315" duration="1542000" />
     </task>
     <servers />
   </component>

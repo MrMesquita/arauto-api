@@ -1,14 +1,14 @@
 <?php
 
-namespace App\WhatsAppIntegration\Domain\Entity;
+namespace App\WhatsappIntegration\Domain\Entity;
 
 use App\Shared\Domain\Entity\Tenant;
-use App\WhatsAppIntegration\Infrastructure\Repository\WhatsAppAccountRepository;
+use App\WhatsappIntegration\Infrastructure\Repository\WhatsappAccountRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: WhatsAppAccountRepository::class)]
-class WhatsAppAccount
+#[ORM\Entity(repositoryClass: WhatsappAccountRepository::class)]
+class WhatsappAccount
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]

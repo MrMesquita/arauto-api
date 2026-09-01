@@ -7,11 +7,12 @@ use App\Campaign\Domain\Entity\MessageLog;
 use App\Contact\Domain\Entity\Contact;
 use App\Shared\Domain\Enum\TenantPlan;
 use App\Shared\Infrastructure\Repository\TenantRepository;
-use App\WhatsAppIntegration\Domain\Entity\MessageTemplate;
-use App\WhatsAppIntegration\Domain\Entity\WhatsAppAccount;
+use App\WhatsappIntegration\Domain\Entity\MessageTemplate;
+use App\WhatsappIntegration\Domain\Entity\WhatsappAccount;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Attribute\Ignore;
 
 #[ORM\Entity(repositoryClass: TenantRepository::class)]
 class Tenant
@@ -33,36 +34,42 @@ class Tenant
     /**
      * @var Collection<int, Contact>
      */
+    #[Ignore]
     #[ORM\OneToMany(targetEntity: Contact::class, mappedBy: 'tenant')]
     private Collection $contacts;
 
     /**
-     * @var Collection<int, WhatsAppAccount>
+     * @var Collection<int, WhatsappAccount>
      */
-    #[ORM\OneToMany(targetEntity: WhatsAppAccount::class, mappedBy: 'tenant')]
+    #[Ignore]
+    #[ORM\OneToMany(targetEntity: WhatsappAccount::class, mappedBy: 'tenant')]
     private Collection $whatsAppAccounts;
 
     /**
      * @var Collection<int, MessageTemplate>
      */
+    #[Ignore]
     #[ORM\OneToMany(targetEntity: MessageTemplate::class, mappedBy: 'tenant')]
     private Collection $messageTemplates;
 
     /**
      * @var Collection<int, Campaign>
      */
+    #[Ignore]
     #[ORM\OneToMany(targetEntity: Campaign::class, mappedBy: 'tenant')]
     private Collection $campaigns;
 
     /**
      * @var Collection<int, MessageLog>
      */
+    #[Ignore]
     #[ORM\OneToMany(targetEntity: MessageLog::class, mappedBy: 'tenant')]
     private Collection $messageLogs;
 
     /**
      * @var Collection<int, User>
      */
+    #[Ignore]
     #[ORM\OneToMany(targetEntity: User::class, mappedBy: 'tenant')]
     private Collection $users;
 
@@ -147,14 +154,14 @@ class Tenant
     }
 
     /**
-     * @return Collection<int, WhatsAppAccount>
+     * @return Collection<int, WhatsappAccount>
      */
     public function getWhatsAppAccounts(): Collection
     {
         return $this->whatsAppAccounts;
     }
 
-    public function addWhatsAppAccount(WhatsAppAccount $whatsAppAccount): static
+    public function addWhatsAppAccount(WhatsappAccount $whatsAppAccount): static
     {
         if (!$this->whatsAppAccounts->contains($whatsAppAccount)) {
             $this->whatsAppAccounts->add($whatsAppAccount);
@@ -164,7 +171,7 @@ class Tenant
         return $this;
     }
 
-    public function removeWhatsAppAccount(WhatsAppAccount $whatsAppAccount): static
+    public function removeWhatsAppAccount(WhatsappAccount $whatsAppAccount): static
     {
         if ($this->whatsAppAccounts->removeElement($whatsAppAccount)) {
             // set the owning side to null (unless already changed)

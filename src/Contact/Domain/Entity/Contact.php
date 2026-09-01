@@ -2,6 +2,8 @@
 
 namespace App\Contact\Domain\Entity;
 
+use ApiPlatform\Metadata\ApiResource;
+use ApiPlatform\Metadata\ErrorResource;
 use App\Campaign\Domain\Entity\MessageLog;
 use App\Contact\Infrastructure\Repository\ContactRepository;
 use App\Shared\Domain\Entity\Tenant;
@@ -10,6 +12,8 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: ContactRepository::class)]
+#[ApiResource]
+#[ErrorResource]
 class Contact
 {
     #[ORM\Id]

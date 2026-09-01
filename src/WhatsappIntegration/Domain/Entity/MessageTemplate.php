@@ -1,11 +1,11 @@
 <?php
 
-namespace App\WhatsAppIntegration\Domain\Entity;
+namespace App\WhatsappIntegration\Domain\Entity;
 
 use App\Campaign\Domain\Entity\Campaign;
 use App\Shared\Domain\Entity\Tenant;
-use App\WhatsAppIntegration\Domain\Enum\TemplateCategory;
-use App\WhatsAppIntegration\Infrastructure\Repository\MessageTemplateRepository;
+use App\WhatsappIntegration\Domain\Enum\TemplateCategory;
+use App\WhatsappIntegration\Infrastructure\Repository\MessageTemplateRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;

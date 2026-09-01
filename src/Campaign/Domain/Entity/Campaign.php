@@ -7,7 +7,7 @@ use App\Campaign\Infrastructure\Repository\CampaignRepository;
 use App\Contact\Domain\Entity\ContactList;
 use App\Shared\Domain\Entity\Tenant;
 use App\Shared\Domain\Entity\User;
-use App\WhatsAppIntegration\Domain\Entity\MessageTemplate;
+use App\WhatsappIntegration\Domain\Entity\MessageTemplate;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;

@@ -1,19 +1,19 @@
 <?php
 
-namespace App\WhatsAppIntegration\Infrastructure\Repository;
+namespace App\WhatsappIntegration\Infrastructure\Repository;
 
-use App\WhatsAppIntegration\Domain\Entity\WhatsAppAccount;
+use App\WhatsappIntegration\Domain\Entity\WhatsappAccount;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @extends ServiceEntityRepository<WhatsAppAccount>
+ * @extends ServiceEntityRepository<WhatsappAccount>
  */
-class WhatsAppAccountRepository extends ServiceEntityRepository
+class WhatsappAccountRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, WhatsAppAccount::class);
+        parent::__construct($registry, WhatsappAccount::class);
     }
 
     //    /**
