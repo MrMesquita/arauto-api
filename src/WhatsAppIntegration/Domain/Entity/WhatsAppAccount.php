@@ -1,9 +1,9 @@
 <?php
 
-namespace App\WhatsappIntegration\Domain\Entity;
+namespace App\WhatsAppIntegration\Domain\Entity;
 
 use App\Shared\Domain\Entity\Tenant;
-use App\WhatsappIntegration\Infrastructure\Repository\WhatsAppAccountRepository;
+use App\WhatsAppIntegration\Infrastructure\Repository\WhatsAppAccountRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 

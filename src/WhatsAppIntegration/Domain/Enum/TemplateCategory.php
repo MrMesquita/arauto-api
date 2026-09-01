@@ -1,6 +1,6 @@
 <?php
 
-namespace App\WhatsappIntegration\Domain\Enum;
+namespace App\WhatsAppIntegration\Domain\Enum;
 
 enum TemplateCategory: string
 {
