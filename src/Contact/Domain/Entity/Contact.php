@@ -21,7 +21,7 @@ class Contact
     #[ORM\JoinColumn(nullable: false)]
     private ?tenant $tenant = null;
 
-    #[ORM\Column(length: 12)]
+    #[ORM\Column(length: 20)]
     private ?string $phone = null;
 
     #[ORM\Column(length: 50)]

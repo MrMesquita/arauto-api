@@ -20,6 +20,10 @@ doctrine:
                 dir: '%kernel.project_dir%/src'
                 prefix: 'App'
                 alias: App
+        filters:
+            tenant_filter:
+                class: App\Shared\Infrastructure\Doctrine\Filter\TenantFilter
+                enabled: false
 
 when@test:
     doctrine:
