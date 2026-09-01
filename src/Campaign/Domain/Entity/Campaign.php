@@ -6,6 +6,7 @@ use App\Campaign\Domain\Enum\CampaignStatus;
 use App\Campaign\Infrastructure\Repository\CampaignRepository;
 use App\Contact\Domain\Entity\ContactList;
 use App\Shared\Domain\Entity\Tenant;
+use App\Shared\Domain\Entity\User;
 use App\WhatsAppIntegration\Domain\Entity\MessageTemplate;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -22,6 +23,10 @@ class Campaign
     #[ORM\ManyToOne(inversedBy: 'campaigns')]
     #[ORM\JoinColumn(nullable: false)]
     private ?Tenant $tenant = null;
+
+    #[ORM\ManyToOne]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?User $createdBy = null;
 
     #[ORM\ManyToOne(inversedBy: 'campaigns')]
     #[ORM\JoinColumn(nullable: false)]
@@ -69,6 +74,16 @@ class Campaign
         $this->tenant = $tenant;
 
         return $this;
+    }
+
+    public function getCreatedBy(): ?User
+    {
+        return $this->createdBy;
+    }
+
+    public function setCreatedBy(?User $createdBy): void
+    {
+        $this->createdBy = $createdBy;
     }
 
     public function getTemplate(): ?MessageTemplate

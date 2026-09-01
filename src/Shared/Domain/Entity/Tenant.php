@@ -60,6 +60,12 @@ class Tenant
     #[ORM\OneToMany(targetEntity: MessageLog::class, mappedBy: 'tenant')]
     private Collection $messageLogs;
 
+    /**
+     * @var Collection<int, User>
+     */
+    #[ORM\OneToMany(targetEntity: User::class, mappedBy: 'tenant')]
+    private Collection $users;
+
     public function __construct()
     {
         $this->contacts = new ArrayCollection();
@@ -67,6 +73,7 @@ class Tenant
         $this->messageTemplates = new ArrayCollection();
         $this->campaigns = new ArrayCollection();
         $this->messageLogs = new ArrayCollection();
+        $this->users = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -100,13 +107,12 @@ class Tenant
 
     public function getCreatedAt(): ?\DateTimeImmutable
     {
-        return $this->created_at;
+        return $this->createdAt;
     }
 
-    public function setCreatedAt(\DateTimeImmutable $created_at): static
+    public function setCreatedAt(\DateTimeImmutable $createdAt): static
     {
-        $this->created_at = $created_at;
-
+        $this->createdAt = $createdAt;
         return $this;
     }
 
@@ -254,6 +260,36 @@ class Tenant
             // set the owning side to null (unless already changed)
             if ($messageLog->getTenant() === $this) {
                 $messageLog->setTenant(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, User>
+     */
+    public function getUsers(): Collection
+    {
+        return $this->users;
+    }
+
+    public function addUser(User $user): static
+    {
+        if (!$this->users->contains($user)) {
+            $this->users->add($user);
+            $user->setTenant($this);
+        }
+
+        return $this;
+    }
+
+    public function removeUser(User $user): static
+    {
+        if ($this->users->removeElement($user)) {
+            // set the owning side to null (unless already changed)
+            if ($user->getTenant() === $this) {
+                $user->setTenant(null);
             }
         }
 
