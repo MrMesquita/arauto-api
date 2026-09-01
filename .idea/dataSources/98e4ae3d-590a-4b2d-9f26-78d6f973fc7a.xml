@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.55">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>753</IntrospectionStateNumber>
+      <IntrospectionStateNumber>764</IntrospectionStateNumber>
       <ServerVersion>16.15</ServerVersion>
       <StartupTime>1788273729</StartupTime>
       <TimeZones>true ACDT
@@ -802,7 +802,7 @@ true posixrules
 13310||10|C|G
 13310||-9223372036854775808|U|G
 13310||10|U|G</Grants>
-      <IntrospectionStateNumber>753</IntrospectionStateNumber>
+      <IntrospectionStateNumber>764</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>arauto</OwnerName>
     </database>
@@ -4227,11 +4227,11 @@ true posixrules
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <LastIntrospectionL1Xid>753</LastIntrospectionL1Xid>
-      <LastIntrospectionL2Xid>753</LastIntrospectionL2Xid>
-      <LastIntrospectionL3Xid>753</LastIntrospectionL3Xid>
+      <LastIntrospectionL1Xid>764</LastIntrospectionL1Xid>
+      <LastIntrospectionL2Xid>764</LastIntrospectionL2Xid>
+      <LastIntrospectionL3Xid>764</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2026-09-01.17:56:03</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2026-09-01.20:49:12</LastIntrospectionLocalTimestamp>
       <LastIntrospectionVersion>260210</LastIntrospectionVersion>
       <ObjectId>2200</ObjectId>
       <StateNumber>524</StateNumber>
@@ -4379,10 +4379,10 @@ true posixrules
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>arauto</OwnerName>
     </table>
-    <table id="283" parent="264" name="whats_app_account">
+    <table id="283" parent="264" name="whatsapp_account">
       <DetailsLevel>2</DetailsLevel>
       <ObjectId>16467</ObjectId>
-      <StateNumber>745</StateNumber>
+      <StateNumber>762</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>arauto</OwnerName>
     </table>
@@ -4570,8 +4570,8 @@ contact_list_id</ColNames>
     <column id="309" parent="275" name="phone">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>745</StateNumber>
-      <StoredType>varchar(12)|0s</StoredType>
+      <StateNumber>758</StateNumber>
+      <StoredType>varchar(20)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="310" parent="275" name="name">
@@ -5167,23 +5167,7 @@ contact_id</ColNames>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16461</RefTableId>
     </foreign-key>
-    <index id="391" parent="283" name="whats_app_account_pkey">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16472</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>745</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <index id="392" parent="283" name="idx_7da0412a9033212a">
-      <ColNames>tenant_id</ColNames>
-      <ObjectId>16474</ObjectId>
-      <StateNumber>745</StateNumber>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <key id="393" parent="283" name="whats_app_account_pkey">
-      <NameSurrogate>1</NameSurrogate>
+    <key id="391" parent="283" name="whats_app_account_pkey">
       <ObjectId>16473</ObjectId>
       <Primary>1</Primary>
       <StateNumber>745</StateNumber>
