@@ -2,6 +2,7 @@
 
 namespace App\Shared\Infrastructure\Doctrine\Filter;
 
+use App\Shared\Exceptions\TenantNotDefinedException;
 use Doctrine\ORM\Mapping\ClassMetadata;
 use Doctrine\ORM\Query\Filter\SQLFilter;
 
@@ -16,10 +17,10 @@ class TenantFilter extends SQLFilter
         try {
             $tenantId = $this->getParameter('tenantId');
         } catch (\InvalidArgumentException) {
-            return ''; // filtro ativado mas sem parâmetro setado ainda — não filtra
+            throw new TenantNotDefinedException();
         }
 
-        $column = $targetEntity->getAssociationMapping('tenant')['joinColumns'][0]['name'] ?? 'tenant_id';
+        $column = $targetEntity->getAssociationMapping('tenant')->joinColumns[0]->name ?? 'tenant_id';
 
         return sprintf('%s.%s = %s', $targetTableAlias, $column, $tenantId);
     }
